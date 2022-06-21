@@ -1,5 +1,7 @@
 package br.edu.unifei.oximeterapi.service;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,10 @@ public class UserMeasureService {
 	@Transactional
 	public UserMeasure save(UserMeasure userMeasure) {
 		return userMeasureRepository.save(userMeasure);
+	}
+	
+	public List<UserMeasure> getByOximeterId(Long oximeterId) {
+		return userMeasureRepository.findFirst10ByOximeterOximeterIdOrderByMeasureDateDesc(oximeterId);
 	}
 	
 }
