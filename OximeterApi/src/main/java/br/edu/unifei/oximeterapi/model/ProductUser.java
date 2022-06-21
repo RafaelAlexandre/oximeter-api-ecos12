@@ -30,7 +30,7 @@ public class ProductUser implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long userId;
+	private Long userId;
 
 	private String name;
 

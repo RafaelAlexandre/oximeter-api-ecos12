@@ -27,8 +27,8 @@ public class Oximeter implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long oximeterId;
+	private Long oximeterId;
 	
-	private long serialNumber;
+	private Long serialNumber;
 	
 }

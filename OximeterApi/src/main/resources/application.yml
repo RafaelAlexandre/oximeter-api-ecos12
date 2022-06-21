@@ -7,7 +7,10 @@ eureka:
     instance-id: ${spring.application.name}:${instanceId:${random.value}}
 spring:
   application:
-    name: oximeter-api
+    name: oximeter-api  
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
   # Security configuration
   security:
     user:

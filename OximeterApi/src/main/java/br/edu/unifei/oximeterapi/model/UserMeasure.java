@@ -30,7 +30,7 @@ public class UserMeasure implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
+	private Long id;
 
 	private Integer bpm;
 
